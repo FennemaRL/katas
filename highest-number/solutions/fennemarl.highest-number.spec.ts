@@ -6,7 +6,7 @@ describe('getHighestNumber', () => {
     let numbers = [42]
     let maxNumberFinder = new MaxNumberFinder()
 
-    actual = maxNumberFinder.findMaximum(numbers)
+    actual = maxNumberFinder.highestNumber(numbers)
 
     expect(actual).toBe(42)
   })
@@ -16,8 +16,7 @@ describe('getHighestNumber', () => {
     let numbers = [3, 5, 4, 42, 13, 72]
     let maxNumberFinder = new MaxNumberFinder()
 
-    actual = maxNumberFinder.findMaximum(numbers)
-
+    actual = maxNumberFinder.highestNumber(numbers)
     expect(actual).toBe(72)
   })
 })
